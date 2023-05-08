@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  stash:
+    image: stashapp/stash:v0.20.2
+    container_name: stash
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      STASH_STASH: /var/lib/stash/
+      STASH_CONFIG_FILE: /var/lib/stash/config.yml
+      STASH_GENERATED: /var/lib/stash/generated/
+      STASH_METADATA: /var/lib/stash/metadata/
+      STASH_CACHE: /var/lib/stash/cache/
+      STASH_PORT: 9999
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - data:/var/lib/stash
+      - /tank:/tank
+
+volumes:
+  data:
+
