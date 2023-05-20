@@ -17,6 +17,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - data:/var/lib/stash
       - /tank:/tank:ro
+      - /home/joe/photos:/home/joe/photos:ro
 
 volumes:
   data:
