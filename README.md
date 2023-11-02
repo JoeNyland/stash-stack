@@ -11,5 +11,3 @@ After the container has started and before media is indexed, the directory struc
 ```bash
 mkdir -p blobs cache generated/tmp metadata scrapers
 ```
-
-On _Settings_ > _System_, set _Binary data filesystem path_ to `/var/lib/stash/blobs`.
