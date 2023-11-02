@@ -2,7 +2,7 @@ version: '3'
 
 services:
   stash:
-    image: stashapp/stash:v0.21.0
+    image: stashapp/stash
     container_name: stash
     restart: unless-stopped
     network_mode: host
