@@ -10,7 +10,7 @@ After the container has started and before media is indexed, the directory struc
 
 ```bash
 # From within the container
-cd /config
+cd /var/lib/stash
 mkdir -p blobs cache generated/tmp metadata scrapers
 ```
 
