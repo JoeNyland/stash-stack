@@ -16,5 +16,5 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /tank/docker/stash:/var/lib/stash
-      - /tank:/tank:ro
+      - /tank/media/xxx:/tank/media/xxx:ro
       - /home/joe/photos:/home/joe/photos:ro
