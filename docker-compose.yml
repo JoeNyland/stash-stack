@@ -15,6 +15,6 @@ services:
       STASH_PORT: 9999
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /tank/docker/stash:/var/lib/stash
+      - /containers/stash:/var/lib/stash
       - /tank/media/xxx:/tank/media/xxx:ro
       - /home/joe/photos:/home/joe/photos:ro
