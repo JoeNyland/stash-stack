@@ -13,6 +13,10 @@ services:
       STASH_METADATA: /var/lib/stash/metadata/
       STASH_CACHE: /var/lib/stash/cache/
       STASH_PORT: 9999
+    labels:
+      traefik.enable: true
+      traefik.http.services.stash.loadbalancer.server.port: 9999
+      traefik.http.routers.stash.rule: Host(`stash`)
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /containers/stash:/var/lib/stash
